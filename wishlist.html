@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>wishlist</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="wishlist.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="main.html"><img src="../3.0%20Webproject/images/Logo_first.png" alt="logo"></a>
+  <nav>
+    <ul class="nav__links">
+      <li><a href="wishlist.html">Create Wishlist</a></li>
+      <li><a href="#">Friends</a></li>
+      <li><a href="About%20us.html">About us</a></li>
+
+    </ul>
+  </nav>
+  <a class="cta" href="signup.html">Login / Sign-up</a>
+  <p class="menu cta">Menu</p>
+</header>
+
+<div class="overlay">
+  <a class="close">&times;</a>
+  <div class="overlay__content">
+
+    <a href="#">Create Wishlist</a>
+    <a href="#">Friends</a>
+    <a href="#">About us</a>
+    <a href="signup.html">Login</a>
+  </div>
+</div>
+<div id="introduction">
+  Add any Wish you can dream up, with occasion, description, gift notes and images
+</div>
+
+<div class="form" >
+  <form action=" /action_page.php" method="post">
+    <div class="row">
+      <div class="col-25">
+        <label for="tl">Title:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="tl" name="title" placeholder="Title..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+
+        <label for="image">Image:</label>
+      </div>
+      <div class="col-75">
+        <input type="file" id="image" name="fileupload" placeholder="Upload your image.">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="URL">URL / Link:</label>
+      </div>
+      <div class="col-75">
+        <input type="url" name="url" id="URL">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="comment">Comment:</label>
+      </div>
+      <div class="col-75">
+        <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+
+    <div class="button">
+      <input type="submit" value="Add to Wishlist">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
